@@ -69,8 +69,6 @@ pyttsx3==2.90
 PyTweening==1.0.3
 pytz==2020.4
 PyWavelets==1.1.1
-pywin32==300
-pywin32-ctypes==0.2.0
 requests==2.25.1
 scikit-image==0.18.1
 scipy==1.5.4

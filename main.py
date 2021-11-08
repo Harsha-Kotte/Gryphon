@@ -1,7 +1,9 @@
 from discord.ext import commands
 import discord
 
-client = discord.Client()
+#Bot prefix
+client = commands.Bot(command_prefix="?")
+client.remove_command(help)
 
 @client.event
 async def on_ready():

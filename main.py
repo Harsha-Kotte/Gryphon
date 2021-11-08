@@ -9,4 +9,4 @@ client.remove_command(help)
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
-client.run("vdYrHKNBuRr9ctghKsffR6zFDCXbuGAC")
+client.run("ODQ3MTI4NzIxMzIwMzEyODQz.YK5kGg.wRExNqgGU8iRsRVQ-4diSzqmVWY")

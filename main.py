@@ -10,10 +10,10 @@ async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
 @client.event
-async def on_mention(message):
-    if client.user.mentioned_in(message):
-        channel = message.channel 
-        await channel.send("Myself Gryphon and my prefix is `gry `.\nYou can start up with `gry help`.")
+async def on_mention(self,message):
+    user_id = self.bot.user.id
+    if message.content in (f"<@{user_id}>", f"<@!{user_id}>"):
+        await message.reply("Myself Gryphon and my prefix is `gry `.\nYou can start up with `gry help`.")
 
 
 client.run("ODQ3MTI4NzIxMzIwMzEyODQz.YK5kGg.wRExNqgGU8iRsRVQ-4diSzqmVWY")

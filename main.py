@@ -14,5 +14,8 @@ async def on_message(message):
     if client.user.mentioned_in(message):
         await message.channel.send("Hi, my prefix is `gry`.")
 
+@client.event
+async def help(ctx):
+    await ctx.send("**Default help disabled!**")
 
 client.run("ODQ3MTI4NzIxMzIwMzEyODQz.YK5kGg.wRExNqgGU8iRsRVQ-4diSzqmVWY")

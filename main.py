@@ -9,7 +9,6 @@ client.remove_command(help)
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
-@client.event
 async def on_mention(self,message):
     user_id = self.bot.user.id
     if message.content in (f"<@{user_id}>", f"<@!{user_id}>"):

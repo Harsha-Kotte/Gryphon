@@ -21,5 +21,9 @@ async def on_message(message):
 async def on_message(message):
     if "gryphon" in message:
         await message.channel.send("Test successful!")
+        
+@client.event
+async def ad(ctx):
+    await ctx.send("**Automatic deployement successful!**")
 
 client.run("ODQ3MTI4NzIxMzIwMzEyODQz.YK5kGg.wRExNqgGU8iRsRVQ-4diSzqmVWY")

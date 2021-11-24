@@ -17,4 +17,9 @@ async def on_message(message):
 
      await client.process_commands(message)
 
+@client.event
+async def on_message(message):
+    if "gryphon" in message:
+        await message.channel.send("Test successful!")
+
 client.run("ODQ3MTI4NzIxMzIwMzEyODQz.YK5kGg.wRExNqgGU8iRsRVQ-4diSzqmVWY")

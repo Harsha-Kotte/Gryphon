@@ -9,10 +9,12 @@ client.remove_command(help)
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
-async def on_mention(self,message):
-    user_id = self.bot.user.id
-    if message.content in (f"<@{user_id}>", f"<@!{user_id}>"):
-        await message.reply("Myself Gryphon and my prefix is `gry `.\nYou can start up with `gry help`.")
+@client.event
+async def on_message(message):
+    if client.user.mentioned_in(message) and message.mention_everyone is False:
+        prefix= get_prefix
+        await message.channel.send(f"My prefix is {client.command_prefix}")
 
+     await client.process_commands(message)
 
 client.run("ODQ3MTI4NzIxMzIwMzEyODQz.YK5kGg.wRExNqgGU8iRsRVQ-4diSzqmVWY")

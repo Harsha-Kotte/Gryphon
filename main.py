@@ -17,7 +17,7 @@ async def on_message(message):
 
 @client.group(invoke_without_command=True)
 async def help(ctx):
-    em = discord.Embed(title="Gryphon configurations", description="This will help you know the features of the bot.", color=03fcd3)
+    em = discord.Embed(title="Gryphon configurations", description="This will help you know the features of the bot.", color="03fcd3")
     em.set_footer(text="Click the buttons below to explore the ctaegory you want...")
     await ctx.send(embed=em)
     

@@ -3,7 +3,8 @@ from discord.ui import Button
 import discord
 
 #Bot prefix
-client = commands.Bot(command_prefix="gry ")
+intents = discord.Intents.all()
+client = commands.Bot(command_prefix="gry ", intents=intents)
 client.remove_command("help")
 
 @client.event

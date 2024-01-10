@@ -22,4 +22,4 @@ async def help(ctx):
     em.set_footer(text="Click the buttons below to explore the ctaegory you want...")
     await ctx.send(embed=em)
     
-client.run("ODQ3MTI4NzIxMzIwMzEyODQz.GOjNL6.0emDW-Q2D4R7eLVfGrG11bdMENX1H1H9cgXs1M")
+client.run("ODQ3MTI4NzIxMzIwMzEyODQz.Gd9XgI.UZzu9G03RVhL0ItiXP9VKmvUkMDa3Rla_3kCeo")
